@@ -1,10 +1,28 @@
-angular.module('vidyaanApp', ['ngAnimate'])
+angular.module('vidyaanApp', ['ngRoute','ngAnimate'])
+
+.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+
+	$routeProvider
+
+		// home page
+		.when('/', {
+			templateUrl: 'views/home.html'
+		})
+	
+		.when('/home', {
+			templateUrl: 'views/home.html'
+		})
+	
+		
+	$locationProvider.html5Mode(true);
+
+}])
 
 .controller('homeCtrl', function($scope) {
    console.log('home ctrl entered');
 
    (function ($) {
-console.log('entered inside');
+     console.log('entered inside');
             //Function to animate slider captions 
             function doAnimations(elems) {
                 //Cache the animationend event in a variable
@@ -44,6 +62,6 @@ console.log('entered inside');
             });
 
         })(jQuery);
-        
+  
 })
   

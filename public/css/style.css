@@ -1,6 +1,15 @@
+ 
 body {
-      font: 400 15px/1.8 Lato, sans-serif;
-  }
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #555e58;
+    background-color: #f5f5f5;
+}
+
+  a {
+    text-decoration: none;
+    color: #ffa300;
+}
 
 .myMainNav {
       margin-bottom: 0;
@@ -59,27 +68,27 @@ body {
 
   
 #first-slider {
-  padding: 0;
+  display:block;
+  min-width: 50vw;
+  height: 83vh;
+}
+
+#carousel-example-generic {
+  height: 100%;
 }
 
 
 #first-slider .slide1 h3, #first-slider .slide2 h3, #first-slider .slide3 h3, #first-slider .slide4 h3{
     color: #fff;
-    font-size: 30px;
-      text-transform: uppercase;
-      font-weight:700;
+    font-size: 20px;
+    font-weight:normal;
 }
 
 #first-slider .slide1 h4,#first-slider .slide2 h4,#first-slider .slide3 h4,#first-slider .slide4 h4{
     color: #fff;
-    font-size: 30px;
-      text-transform: uppercase;
-      font-weight:700;
+    font-size: 22px;
+    font-weight:normal;
 }
-#first-slider .slide1 .text-left ,#first-slider .slide3 .text-left{
-    padding-left: 40px;
-}
-
 
 #first-slider .carousel-indicators {
   bottom: 0;
@@ -88,11 +97,14 @@ body {
 #first-slider .carousel-control.left {
   background-image: none;
 }
+
 #first-slider .carousel .item {
-  min-height: 425px; 
+  min-height: 83vh; 
   height: 100%;
   width:100%;
 }
+
+
 
 .carousel-inner .item .container {
     display: flex;
@@ -145,12 +157,14 @@ body {
   border:none;
 }
 #first-slider .carousel-indicators .active{
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     background-color: #fff;
   border:none;
 }
-
+#first-slider {
+    background: linear-gradient(to bottom, rgba(241,108,73,1) 0%,rgba(230,104,71,1) 100%);
+}
 
 #first-slider .carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
@@ -191,10 +205,7 @@ body {
     margin-top: -15px;
     font-size: 30px;
     color: #fff;
-    border: 3px solid #ffffff;
-    -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    border-radius: 53px;
+ 
 }
 #first-slider .carousel-control .glyphicon-chevron-right{
     right: 50%;
@@ -203,10 +214,6 @@ body {
     margin-top: -15px;
     font-size: 30px;
     color: #fff;
-    border: 3px solid #ffffff;
-    -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    border-radius: 53px;
 }
 #first-slider .carousel-control {
     opacity: 1;
@@ -218,12 +225,8 @@ body {
 /*       Slides backgrounds     */
 /********************************/
 
-#first-slider .slide1, #first-slider .slide2, #first-slider .slide3, #first-slider .slide4 { 
-    background: linear-gradient(to bottom, rgba(241,108,73,1) 0%,rgba(230,104,71,1) 100%);; 
-}
- /*
 #first-slider .slide1 {
-   
+   height: 100%;
     background-image: url(https://s20.postimg.org/h50tgcuz1/image.jpg);
       background-size: cover;
     background-repeat: no-repeat;
@@ -233,6 +236,7 @@ body {
   background-image: url(https://s20.postimg.org/uxf8bzlql/image.jpg);
       background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 #first-slider .slide3 {
   background-image: url(https://s20.postimg.org/el56m97f1/image.jpg);
@@ -244,7 +248,6 @@ body {
       background-size: cover;
     background-repeat: no-repeat;
 }
-*/
 
 
 
@@ -256,6 +259,26 @@ body {
 }
 @media screen and (max-width: 640px){
       
+}
+
+
+@media only screen and (max-width: 960px) and (min-width: 768px)
+{
+.home-section-info h3{
+    font-size: 18px;
+ }
+}
+.home-section-info p {
+    padding-bottom: 10px;
+    line-height: 24px;
+    color: #555e58;
+}
+
+.home-section-info h3{
+    font-size: 24px;
+    font-weight: 300;
+    color: #a3a2a2;
+    letter-spacing: 0;
 }
 
 
@@ -303,6 +326,13 @@ body {
     }
   }
 
+ #myCarousel .carousel-inner h4 {
+    font-size: 30px;
+    color: #555e58;
+    font-weight: 800;
+    padding-bottom: 12px;
+ }
+
  #myCarousel .carousel-control.right, .carousel-control.left {
       background-image: none;
       color: #f4511e;
@@ -329,10 +359,110 @@ body {
       color: white;
   }
 
+#services .col-sm-4 p{
+    padding-bottom: 10px;
+    line-height: 24px;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+
+#services .col-sm-4 h4 a{
+    text-decoration: none;
+    color: #fff;   
+}
+
+#services .col-sm-4 h4{ 
+   font-weight: bold;
+}
+
+
   #portfolio {
-      padding: 113px 0 120px;
+    padding: 70px 0 120px;
     background-color: #f5f5f5;
   }
+
+ #portfolio .portfolio-stories h2, #portfolio .portfolio-stories h4 {
+      color: #636b66;
+  }
+
+  #portfolio .portfolio-stories h2 {
+
+    font-size: 72px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    letter-spacing: -4px;
+
+  }
+
+
+  @media only screen and (max-width: 960px) and (min-width: 768px)
+  {
+    #portfolio .portfolio-stories h2 {
+     font-size: 60px;
+         padding-bottom: 15px;
+         letter-spacing: -4px;
+    }
+  }
+
+  @media only screen and (max-width: 767px)
+  {
+    #portfolio .portfolio-stories h2 {
+     font-size: 48px;
+     letter-spacing: -4px;
+    }
+  }
+
+  @media only screen and (max-width: 479px)
+  {
+    #portfolio .portfolio-stories h2 {
+     font-size: 32px;
+    }
+  }
+
+  @media only screen and (max-width: 479px)
+  {
+    #portfolio .portfolio-stories h2, #portfolio .portfolio-stories h4 {
+      letter-spacing: -1px;
+     }
+  } 
+
+
+  #portfolio .portfolio-stories h4 {
+    font-size: 36px;
+    font-weight: 200;    
+}
+
+  @media only screen and (max-width: 960px) and (min-width: 768px)
+  {
+   #portfolio .portfolio-stories h4 {
+     font-size: 30px;
+     font-weight: 200;    
+   }
+  } 
+
+  @media only screen and (max-width: 767px)
+  {
+   #portfolio .portfolio-stories h4 {
+     font-size: 24px;
+     font-weight: 200;    
+   }
+  }
+
+  @media only screen and (max-width: 479px)
+  {
+   #portfolio .portfolio-stories h4 {
+     font-size: 16px;
+     font-weight: 200;    
+   }
+  } 
+
+
+  .section-title h2, #page-name h1 {
+    font-size: 72px;
+    font-weight: 800;
+    padding-bottom: 15px;
+    letter-spacing: -4px;
+}
 
   a.more-info {
     text-decoration: none;
@@ -360,3 +490,26 @@ footer {
   footer a {
       color: #f5f5f5;
   }  
+
+  .bottomLinksDiv {
+     text-align:left;
+  }
+
+.bottomLinksDiv li a {
+
+    text-decoration: none;
+    color: #555e58;
+
+}
+
+.bottomLinksDiv li {
+    font-size: 14px;
+    padding: 0 0 12px 17px;
+    background: url(../img/bullet2.png) no-repeat 0 8px;
+}
+
+.bottomLinksDiv li:hover { 
+  font-size: 14px;
+    padding: 0 0 12px 17px;
+  background: url(../img/bullet3.png) no-repeat 0 8px;
+}

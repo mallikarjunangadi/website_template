@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>My Website</title>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.js"></script>
+    <script src="js/controller.js"></script>
+</head>
+
+<body ng-app="vidyaanApp">
+
+    <nav class="navbar navbar-default myMainNav">
+        <div class="container-fluid">
+            <div class="navbar-header myMainNav-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+                <a class="navbar-brand myMainNav-brand" href="#">Vidyaan Edublitz</a>
+            </div>
+            <div class="collapse navbar-collapse myMainNav-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right myMainNav-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Industries</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact us</a></li>   
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+  <div ng-view></div>
+<footer class="text-center">
+  <p>All Rights Reserved. © Vidyaan Edublitz India LLP </p> 
+</footer>
+
+</body>
